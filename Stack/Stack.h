@@ -32,6 +32,11 @@ public:
         }
     }
 
+    ~Stack()
+    {
+        delete [] m_data;
+    }
+
     void push(const T& value)
     {
         ++m_length;
