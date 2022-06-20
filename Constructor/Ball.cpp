@@ -10,20 +10,16 @@ private:
 public:
     Ball() = default;
     
-    Ball(std::string color)
+    Ball(std::string color) : m_color {color}
     {
-        m_color = color;
     }
 
-    Ball(double radius)
+    Ball(double radius) : m_radius {radius}
     {
-        m_radius = radius;
     }
 
-    Ball(std::string color, double radius)
+    Ball(std::string color, double radius) : m_color {color}, m_radius {radius}
     {
-        m_color = color;
-        m_radius = radius;
     }
 
     void print()
@@ -45,6 +41,6 @@ int main()
 
     Ball blueTwenty{"blue", 20.0};
     blueTwenty.print();
-    
+
     return 0;
 }
