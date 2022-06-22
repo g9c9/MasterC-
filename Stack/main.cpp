@@ -1,7 +1,7 @@
 #include "Stack.h"
 #include <iostream>
 
-void printStack(Stack<int> s)
+void printStack(const Stack<int>& s)
 {
     std::cout << s << '\n';
 }
